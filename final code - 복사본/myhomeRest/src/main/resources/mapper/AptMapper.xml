@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.home.apt.repository.AptMapper">
+	<select id="selectSidoName" resultType="com.ssafy.home.apt.dto.BaseaddressDTO">
+		select distinct sidoName 
+		from baseaddress
+	</select>
+	
+	<select id="selectGugunName" resultType="com.ssafy.home.apt.dto.BaseaddressDTO">
+		select distinct gugunName 
+		from baseaddress 
+		where sidoName = #{sidoName}
+	</select>
+	
+	<select id="selectDongName" parameterType="com.ssafy.home.apt.dto.BaseaddressDTO" resultType="com.ssafy.home.apt.dto.BaseaddressDTO">
+		select distinct dongName, dongCode, lat, lng
+		from baseaddress 
+		where sidoName = #{sidoName} and gugunName = #{gugunName}
+	</select>
+	
+	<select id="selectDongcode" parameterType="com.ssafy.home.apt.dto.BaseaddressDTO" resultType="String">
+		select dongcode 
+		from dongcode 
+		where dongname=#{dongName} and sidoName = #{sidoName}
+	</select>
+	
+	<select id="selectList" parameterType="com.ssafy.home.apt.dto.HouseListDTO" resultType="com.ssafy.home.apt.dto.HousedealinfoDTO">
+		select hd.no, hi.apartmentName, hd.floor, hi.dong as 'dongName', hd.dealYear, hd.dealMonth, hd.area, hd.dealamount, hi.lat, hi.lng, hd.aptcode, hi.buildYear, hi.jibun, hi.roadName
+         from housedeal hd, houseinfo hi
+         where hd.aptCode = hi.aptcode and hi.dongcode = #{dongCode}
+         and dealyear = #{dealYear} and dealmonth = #{dealMonth} 
+         limit #{startRow}, #{count}
+	</select>
+	
+	<select id="selectTotalCount" parameterType="com.ssafy.home.apt.dto.HouseListDTO" resultType="int">
+		select count(hi.apartmentName)
+        from housedeal hd, houseinfo hi
+        where hd.aptCode = hi.aptcode and hi.dongcode = #{dongCode}
+        and dealyear = #{dealYear} and dealmonth = #{dealMonth} 
+	</select>
+	
+	 <select id="selectOne" parameterType="long" resultType="com.ssafy.home.apt.dto.HousedealinfoDTO">
+		 select hd.no, hi.apartmentName, hd.floor, hi.dong as 'dongName', hd.dealYear, hd.dealMonth, hd.area, hd.dealamount, hi.lat, hi.lng, hd.aptcode
+		 from housedeal hd join houseinfo hi
+		 on hd.aptcode = hi.aptcode where hd.no = #{no};
+	 </select>
+	 
+	 <select id="selectTransportation" parameterType="com.ssafy.home.apt.dto.BaseaddressDTO" resultType="com.ssafy.home.apt.dto.HousedealinfoDTO">
+		select distinct (hi.apartmentName), hi.lat, hi.lng, hi.dong as 'dongName', hd.aptcode, hi.buildYear, hi.jibun, hi.roadName
+		from housedeal hd, houseinfo hi
+		where hd.aptCode = hi.aptcode and hi.dong = #{dongName}
+	 </select>
+
+	<select id="selectAllByAptName" parameterType="com.ssafy.home.apt.dto.HousedealinfoDTO" resultType="com.ssafy.home.apt.dto.HousedealinfoDTO">
+		select *
+		from houseview
+		where dealYear between 2019 and 2022 and apartmentName= #{apartmentName} and dongName = #{dongName}
+	</select>
+	<select id="selectTotalAmountByDong" resultType="com.ssafy.home.apt.dto.HousedealinfoDTO">
+		select *
+		from houseview hv
+				 join dongcode dc on hv.dongName = dc.dongName
+		where dc.sidoName = '서울특별시' and hv.dealYear between 2017 and 2022 and hv.dongName = #{ dongName }
+	</select>
+</mapper>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click1" disabled="disabled">동물병원</button>
+    <button id="click2" >동물약국</button>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fee2964f095ecaef309e6699b5d8e22d&libraries=services"></script>
+    <script>
+        document.querySelector('#click1').onclick = async function(){
+            //animal 데이터 fetch로 가져오기
+            let response = await fetch('http://openapi.seoul.go.kr:8088/7775476a766c616e363269696a6f71/json/LOCALDATA_020301/1/1000/')
+            let data = await response.json();
+            let list = data.LOCALDATA_020301.row;
+
+            console.log(list);
+
+            let geocoder = new kakao.maps.services.Geocoder();
+            //필요한 데이터 가져오기
+
+            let after = [];
+
+            list.forEach((hos)=>{
+                let name = hos.BPLCNM.trim();
+                let streetAddress = hos.RDNWHLADDR.trim();
+                let siteAddress = hos.SITEWHLADDR.trim();
+                let x = hos.X.trim();
+                let y = hos.Y.trim();
+
+                // 위도 경도 변환
+                geocoder.addressSearch(siteAddress, async function(result, status) {
+
+                // 정상적으로 검색이 완료됐으면 
+                if (status === kakao.maps.services.Status.OK) {
+                    console.log(result[0]);
+                    let info = result[0];
+                    let json = {
+                        name : name,
+                        streetAddress : info.road_address.address_name,
+                        siteAddress : info.address.address_name,
+                        lat : info.road_address.x,
+                        lng : info.road_address.y,
+                    }
+                    after.push(json);
+
+                    let response = await fetch('http://localhost:9999/animal/insert',{
+                        method : "post",
+                        headers : {
+                            "Content-Type":"Application/json",
+                        },
+                        body : JSON.stringify(json),
+                    });
+                    let data = response.text();
+                    console.log(data);
+                }
+
+                
+                });
+            });
+        }
+        document.querySelector('#click2').onclick = async function(){
+            //animal 데이터 fetch로 가져오기
+            let response = await fetch('http://openapi.seoul.go.kr:8088/7775476a766c616e363269696a6f71/json/LOCALDATA_020302/1/1000/')
+            let data = await response.json();
+            let list = data.LOCALDATA_020302.row;
+            console.log(list);
+
+            let geocoder = new kakao.maps.services.Geocoder();
+
+            list.forEach((hos)=>{
+                let name = hos.BPLCNM.trim();
+                let streetAddress = hos.RDNWHLADDR.trim();
+                let siteAddress = hos.SITEWHLADDR.trim();
+                let x = hos.X.trim();
+                let y = hos.Y.trim();
+
+                // 위도 경도 변환
+                geocoder.addressSearch(siteAddress, async function(result, status) {
+
+                // 정상적으로 검색이 완료됐으면 
+                if (status === kakao.maps.services.Status.OK) {
+                    console.log(result[0]);
+                    let info = result[0];
+                    let json = {
+                        name : name,
+                        streetAddress : info.road_address.address_name,
+                        siteAddress : info.address.address_name,
+                        lat : info.road_address.x,
+                        lng : info.road_address.y,
+                    }
+                    console.log(json);
+                    //after.push(json);
+
+                    let response = await fetch('http://localhost:9999/animal/pharmacy',{
+                        method : "post",
+                        headers : {
+                            "Content-Type":"Application/json",
+                        },
+                        body : JSON.stringify(json),
+                    });
+                    let data = response.text();
+                    console.log(data);
+                }
+
+                
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
