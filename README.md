@@ -42,7 +42,7 @@
 
 ### 1 - 3. 개발 일정 관리표
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/522bb0fc-9ab1-4292-aa1d-e0698fd3dc33/Untitled.png)
+<img src="/img/Untitled (1).png"  width="700" height="370">
 
 ### 1 - 4. 요구사항 정의서
 
