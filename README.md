@@ -197,31 +197,31 @@ Vue.js / javaScript / Vuetify
 
 **[STATION]**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0c19e7b7-f652-440c-9951-0d953b04de93/Untitled.png)
+<img src="/img/Untitled (18).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/54724de5-ebdd-43f2-b5cf-58b5688e88d2/Untitled.png)
+<img src="/img/Untitled (19).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00964444-d8c8-457d-a840-f4f9e1d6760a/Untitled.png)
+<img src="/img/Untitled (20).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9025c776-b147-46bb-9bf2-13ddae6df5f8/Untitled.png)
+<img src="/img/Untitled (21).png"  width="700" height="370">
 
 **[ANIMAL]**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7b5ac3b0-81bf-4259-87d2-4c76a1f4c4c1/Untitled.png)
+<img src="/img/Untitled (22).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ee246d79-e076-4a29-952a-6aadaa6752ce/Untitled.png)
+<img src="/img/Untitled (23).png"  width="700" height="370">
 
 **[LOGIN]**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f992fc84-d38b-47c6-b5d3-42425fb35f24/Untitled.png)
+<img src="/img/Untitled (24).png"  width="700" height="370">
 
 **[JOIN]**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a68ed6a0-d8d0-42a2-af1b-6380560ebd1a/Untitled.png)
+<img src="/img/Untitled (25).png"  width="700" height="370">
 
 **[장바구니]**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3a4f7c6b-e8a7-4c0a-b446-bc9ffa01ed04/Untitled.png)
+<img src="/img/Untitled (26).png"  width="700" height="370">
 
 ## 5. 사용 데이터
 
@@ -257,7 +257,7 @@ Vue.js / javaScript / Vuetify
 
 ### 5 - 2. 테이블 구조도(ERD)
 
-![ERD.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0d1fa4c4-9b13-4387-b03d-f58cb11f7cd4/ERD.png)
+<img src="/img/ERD.png"  width="700" height="370">
 
 ### 5 - 3. 클래스 다이어그램
 
@@ -265,11 +265,12 @@ BasePackage : com.ssafy.home
 
 5-3-1 Package : apt, animal
 
-![classDiagram1.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7ffaef5c-aa78-4f3d-8770-6830a03b96d3/classDiagram1.png)
+<img src="/img/classDiagram1.PNG.png"  width="700" height="370">
+
 
 5-3-2 board, member, station
 
-![classDiagram2.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/52a734c8-dd84-4078-995a-b8e8f58e334a/classDiagram2.png)
+<img src="/img/classDiagram2.PNG.png"  width="700" height="370">
 
 전체
 
