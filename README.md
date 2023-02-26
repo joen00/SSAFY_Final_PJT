@@ -42,11 +42,11 @@
 
 ### 1 - 3. 개발 일정 관리표
 
-<img src="/img/Untitled (1).png"  width="700" height="370">
+<img src="/img/Untitled.png"  width="700" height="370">
 
 ### 1 - 4. 요구사항 정의서
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/57d96a2a-998e-4bcb-9a20-a321b1d9e7ff/Untitled.png)
+<img src="/img/Untitled (1).png"  width="700" height="370">
 
 ## 2. 개발언어/ 프로그램, 필수 라이브러리/오픈소스
 
@@ -159,41 +159,41 @@ Vue.js / javaScript / Vuetify
 
 **[INDEX]**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bde67dd7-bc6e-473f-8931-ba1538e54135/Untitled.png)
+<img src="/img/Untitled (2).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1bf8ed74-50b1-466b-9fcc-62f0ad4efff3/Untitled.png)
+<img src="/img/Untitled (3).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/029e60dc-d36a-4d77-ab77-16e9c7d74b38/Untitled.png)
+<img src="/img/Untitled (4).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d5484d9e-3497-4760-976a-1aa893514d2a/Untitled.png)
+<img src="/img/Untitled (5).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5a658cab-b7aa-41b5-b5a4-0d1faeea3e57/Untitled.png)
+<img src="/img/Untitled (6).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5e3045cf-ee5e-4e36-97e2-9095f88f8a20/Untitled.png)
+<img src="/img/Untitled (7).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c31a128d-de0b-485f-8892-87b55dc4dc8d/Untitled.png)
+<img src="/img/Untitled (8).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/369897b2-cd62-464e-9f26-71f619581d78/Untitled.png)
+<img src="/img/Untitled (9).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7a1a3b55-e69c-42b5-9414-7944a21ccd95/Untitled.png)
+<img src="/img/Untitled (10).png"  width="700" height="370">
 
 **[APTMAIN]**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a729a00e-e8da-4dd1-9e22-18e6e3009e76/Untitled.png)
+<img src="/img/Untitled (11).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/edcfb18b-4794-4a89-b158-624b15db93d9/Untitled.png)
+<img src="/img/Untitled (12).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/559424af-37d6-4f2a-863c-a0f179a6c123/Untitled.png)
+<img src="/img/Untitled (13).png"  width="700" height="370">
 
 **[BOARD]**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/05596cfc-b051-49ed-afd8-459767ada7f8/Untitled.png)
+<img src="/img/Untitled (14).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25953d31-ae7c-4246-baa8-73b9edfd328a/Untitled.png)
+<img src="/img/Untitled (15).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/85d0764e-f048-45e6-be53-58b50804f36f/Untitled.png)
+<img src="/img/Untitled (16).png"  width="700" height="370">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8ac88029-d628-4e08-b0bb-a1c5fbb04137/Untitled.png)
+<img src="/img/Untitled (17).png"  width="700" height="370">
 
 **[STATION]**
 
