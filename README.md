@@ -274,6 +274,14 @@ BasePackage : com.ssafy.home
 
 전체
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a9c451bf-be8c-4dfa-b173-a010c150f6c3/Untitled.png)
+<img src="/img/Untitled (27).png"  width="700" height="370">
 
 자세히 보기
+
+<img src="/img/Untitled (28).png"  width="700" height="370">
+
+<img src="/img/Untitled (29).png"  width="700" height="370">
+
+<img src="/img/Untitled (30).png"  width="700" height="370">
+
+<img src="/img/Untitled (31).png"  width="700" height="370">
